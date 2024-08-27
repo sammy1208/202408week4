@@ -1,0 +1,96 @@
+.footer{
+  background-color: #AA0601;
+  color: #FFFFFF;
+  &-contean{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid #FFFFFF 1px;
+    padding-top: 48px;
+    padding-bottom: 32px;
+    @media (max-width: 700px){
+      padding: 24px 0;
+    }
+  }
+  &-menu{
+    display: flex;
+    font-size: 16px;
+    margin-bottom: 35px;
+    @media(max-width: 790px){
+      display: none;
+    }
+  }
+  &-menu-a{
+    padding: 8px 0;
+    margin-right: 48px;
+    &:hover{
+      font-weight: 550;
+    }
+  }
+  &-connect{
+    font-size: 36px;
+    @media (max-width: 700px){
+      font-size: 16px;
+    }
+  }
+  &-icon{
+    font-size: 48px;
+    margin-right: 20px;
+    @media (max-width: 700px){
+      font-size: 24px;
+    }
+  }
+  &-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    padding: 32px 0;
+    @media (max-width: 700px){
+      padding-top: 16px;
+      padding-bottom: 24px;
+      display: block;
+    }
+  }
+  &-item-list{
+    font-size: 14px;
+    display: flex;
+    @media (max-width: 700px){
+      display: block;
+      font-size: 16px;
+    }
+  }
+  &-item-list-a:hover{
+    font-weight: 550;
+  }
+  &-social{
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+.social-img{
+  width: 48px;
+  height: 48px;
+  @media (max-width: 700px){
+    width: 24px;
+    height: 24px;
+  }
+  &-ml{
+    margin-left: 32px;
+    @include mobile-larger{
+      margin-left: 12px;
+    }
+    @media(max-width: 790px){
+      width: 40px;
+      height: 40px;
+    }
+  }  
+}
+
+@media (max-width: 700px){
+  .mr-48{
+      margin-bottom: 8px;
+  }
+  .mb-mb-8{
+      margin-bottom: 8px;
+  }
+}
